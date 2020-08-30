@@ -46,7 +46,7 @@ class IngNlParser(CsvStatementParser):
         """Return iterable object consisting of a line per transaction
         """
         
-        reader = csv.reader(self.fin, delimiter=',', quotechar='"')
+        reader = csv.reader(self.fin, delimiter=';', quotechar='"')
 
         # Absorb header line
         next(reader, None)
